@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business & Enterprise Architecture Course</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #1b2a49;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            padding: 40px 20px;
+            max-width: 960px;
+            margin: auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #e6f0fa;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0d1b2a;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #1b2a49;
+        }
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background-color: #003f88;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #003f88;
+        }
+        .content-block {
+            margin-bottom: 40px;
+        }
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .about-photo {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h4 {
+            margin-bottom: 5px;
+            color: #00509d;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #3e5c76;
+        }
+        .highlight {
+            color: #0077b6;
+            font-weight: bold;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>Master Business & Enterprise Architecture at a Strategic Level</h1>
+    <p>Learn how to bridge business strategy and IT execution with practical frameworks, real-world skills, and proven methods.</p>
+    <button class="cta-button" onclick="document.getElementById('waitlist').scrollIntoView({behavior: 'smooth'});">Join the Waitlist</button>
+    <p><span class="highlight">Get 2 hours of free coaching</span> when you sign up early.</p>
+</header>
+
+<section>
+    <h2 class="section-title">The Problem</h2>
+    <div class="content-block">
+        <ul>
+            <li>Too much theory, not enough practical guidance.</li>
+            <li>Struggling to connect architecture with business goals.</li>
+            <li>Hard to influence decision-makers as a technical expert.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">The Solution</h2>
+    <div class="content-block">
+        <p>Our course helps you develop strategic-level thinking, master practical frameworks, and communicate with business leaders to deliver measurable impact.</p>
+        <p>Built from real-world experience — not just certification slides.</p>
+    </div>
+
+    <h2 class="section-title">Who Is This For?</h2>
+    <div class="content-block">
+        <ul>
+            <li>Aspiring Enterprise Architects</li>
+            <li>Lead Developers transitioning to architecture roles</li>
+            <li>Current Architects who want strategic impact</li>
+            <li>Students aiming for a future in architecture</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Free Bonus: 2 Hours of Coaching</h2>
+    <div class="content-block">
+        <p>Join the waitlist and secure 2 hours of personal coaching to accelerate your architecture career. Limited slots available for early subscribers.</p>
+    </div>
+
+    <h2 class="section-title">About the Instructor</h2>
+    <div class="about-section">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQE-P6ROalwQ3Q/profile-displayphoto-shrink_200_200/B4DZarlN1rHAAc-/0/1746635382690?e=1752710400&v=beta&t=qmL3kP2KD4w6HsCe59uii9Vr5NplimL2czlmUKn31a0" alt="Christer Berglund" class="about-photo">
+        <div class="about-text">
+            <p>Christer Berglund is a senior business architect and advisor with deep experience in enterprise architecture, business transformation, and strategy execution. With a career spanning top-tier consulting firms and advisory roles, Christer specialises in bridging the gap between IT and business through practical, value-driven architecture approaches. He is passionate about empowering professionals to master strategic architecture skills that drive real business outcomes.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="waitlist">Join the Waitlist</h2>
+    <div class="content-block">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-6E-p1FKdB0yDJxKQ2Xvx6YdDKAvpecpcoS4D0iKGHSmQKw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <h2 class="section-title">Contact Us</h2>
+    <div class="content-block contact-info">
+        <p>Email: <a href="mailto:hello@christerberglund.com">hello@christerberglund.com</a></p>
+        <p>Phone: +357 99123456</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Christer Berglund. All rights reserved.</p>
+    <p><a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
