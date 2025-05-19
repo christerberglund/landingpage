@@ -21,6 +21,7 @@
             text-align: center;
             padding: 80px 20px;
             background: #e6f0fa;
+            position: relative;
         }
         .hero h1 {
             font-size: 2.5rem;
@@ -89,9 +90,18 @@
         a:hover {
             text-decoration: underline;
         }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
     </style>
 </head>
 <body>
+
+<canvas id="confetti-canvas"></canvas>
 
 <header class="hero">
     <h1>Master Business & Enterprise Architecture at a Strategic Level</h1>
@@ -155,6 +165,60 @@
     <p>&copy; 2025 Christer Berglund. All rights reserved.</p>
     <p><a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
 </footer>
+
+<script>
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    let confetti = [];
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    function createConfetti() {
+        for (let i = 0; i < 150; i++) {
+            confetti.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - canvas.height,
+                r: Math.random() * 6 + 2,
+                d: Math.random() * 10 + 5,
+                color: `hsl(${Math.random() * 360}, 70%, 60%)`
+            });
+        }
+    }
+
+    function drawConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confetti.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.fill();
+        });
+        updateConfetti();
+    }
+
+    function updateConfetti() {
+        confetti.forEach(p => {
+            p.y += p.d * 0.1;
+            if (p.y > canvas.height) {
+                p.y = -10;
+                p.x = Math.random() * canvas.width;
+            }
+        });
+    }
+
+    function animate() {
+        drawConfetti();
+        requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    createConfetti();
+    animate();
+</script>
 
 </body>
 </html>
